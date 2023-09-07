@@ -1,0 +1,21 @@
+.typing {
+    width: 16ch;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 3.5s steps(8, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+	background-image: linear-gradient(to right, #51D999, #31BDD0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* 打印效果 */
+@keyframes typing {
+  from { width: 0;}
+  to { width: 16ch;}
+}
+/* 光标 */
+@keyframes blink-caret {
+  from, to { box-shadow: 5px 0 0 0 #fff; }
+  50% { box-shadow: 5px 0 0 0; }
+}

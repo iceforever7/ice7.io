@@ -3,8 +3,23 @@
 <html>
 <head>
 	<link href="need/css/loading.css" rel="stylesheet">
+	<link href="need/css/write.css" rel="stylesheet">
+	<link href="need/css/card.css" rel="stylesheet">
 <meta charset="utf-8">
-<title>iceforever的个人主页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+	document.addEventListener('visibilitychange', function () {
+      // 页面变为不可见时触发 
+      if (document.visibilityState == 'hidden') {
+        document.title ="再见~";
+      }
+      // 页面变为可见时触发 
+      if (document.visibilityState == 'visible') {
+        document.title ="iceforever的半成品";
+      }
+    });
+</script>
 <div class="loader">
 	<div class="l_main">
 		<div class="l_square"><span></span><span></span><span></span></div>
@@ -17,7 +32,25 @@
 		$(window).on("load",function(){
 		$(".cube").fadeOut("slow");
 		});
-	</script>
+    </script>
+<style>
+	*{	padding: 0;
+	 	margin: 0;
+		box-sizing: border-box;
+	}
+	header {z-index:3;
+			position:absolute;
+			top:0px;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#fff;
+			font-size: 100px;
+			letter-spacing: 20px;
+		}
+	</style>
 <style>
 	*{	padding: 0;
 	 	margin: 0;
@@ -34,41 +67,55 @@
 		position: fixed;
 		left:0;
 		top:0;
-	}
-	header{position:relative;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #fff;
-		font-size: 100px;
-		letter-spacing: 20px;
-	}
-	article{
-		background: #00000073;
-		position: relative;
-		height: 100%;
-		width: 100%;
-	}
-	article p{
-		width :600px;
-		margin:0 auto;
-		font-size:26px;
-	}
-		
+	}	
 </style>
-</head>
-<body>
-	<video autoplay	muted loop src="need/video/background.gif"></video>
-	<header>text</header>
-	<article>
-		<p>
-			
-			
-			
-		</p>
-	</article>
 	
+</head>
+	
+<body>
+<header>
+		<p class="typing">这是我的个人主页</p>
+</header>
+	<video autoplay	muted loop src="need/video/background.gif"></video>
+
+<div class="card1">
+	<div class ="front">
+		兴趣爱好
+	</div>
+	<div class="back">
+		喜欢小说，喜欢游戏，也喜欢下棋和乒乓球
+	</div>
+</div>
+
+<div class="card2">
+	<div class ="front">
+		个人成就
+	</div>
+	<div class="back">
+		掌握了一点的语言和语法
+	</div>
+</div>
+
+<div class="card3">
+	<div class ="front">
+		自我评估
+	</div>
+	<div class="back">
+		有完成的事，也有没能完成的事。
+	</div>
+</div>
+
+<div class="card4">
+	<div class ="front">
+		未来规划
+	</div>
+	<div class="back">
+		近期的计划是先把自己做的整合包弄完，再来改这个破网页计划做一个小程序
+		未来主要计划是当个搬代码的码农（？
+	</div>
+</div>
+
 </body>
+	
+	
 </html>
