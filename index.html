@@ -2,9 +2,22 @@
 <!doctype html>
 <html>
 <head>
-	<link href="need/css/loading.css" rel="stylesheet" type="text/css"/>
+	<link href="need/css/loading.css" rel="stylesheet">
 <meta charset="utf-8">
 <title>iceforever的个人主页</title>
+<div class="loader">
+	<div class="l_main">
+		<div class="l_square"><span></span><span></span><span></span></div>
+		<div class="l_square"><span></span><span></span><span></span></div>
+		<div class="l_square"><span></span><span></span><span></span></div>
+		<div class="l_square"><span></span><span></span><span></span></div>
+	</div>
+</div>
+	<script>
+		$(window).on("load",function(){
+		$(".cube").fadeOut("slow");
+		});
+	</script>
 <style>
 	*{	padding: 0;
 	 	margin: 0;
